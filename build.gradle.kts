@@ -1,7 +1,9 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
-    alias(libs.plugins.kotlin.jvm)
+    val kotlin = "2.1.0"
+
+    kotlin("jvm") version kotlin
 }
 
 repositories {
